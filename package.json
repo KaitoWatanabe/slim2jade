@@ -28,5 +28,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/KaitoWatanabe/gulp_starter"
+  },
+  "dependencies": {
+    "vue": "^1.0.4"
   }
 }

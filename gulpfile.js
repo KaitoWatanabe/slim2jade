@@ -84,6 +84,11 @@ gulp.task('build', function(callback) {
   );
 });
 
+gulp.task('publish', function(callback) {
+  return gulp.src('./build/**/*')
+  .pipe(gulp.dest('./'));
+});
+
 gulp.task('default', function(callback) {
   return runSequence(
     'build',
