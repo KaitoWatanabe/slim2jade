@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '4.1'
+cache:
+  directories:
+  - node_modules
+branches:
+  only:
+  - develop
+notifications:
+  slack:
+    secure: TxTmq4NkAR+0QcGQpiBJrTPlC264E0LKtKhSlG8LcOBF2dASo6Bso9xmg89BY8ZnoHBBow8+Y2J0vjucbA18bUR+fQQy8iN4BRFuoh94h879HEyXZDuq/K1EPVN7AenbQUaZbsGm55ArrQ7Qhsk5GLSncupQ7VsJo5XKg+jJjFnKRhlJWcWq3iMhZrkQI3xG4G8Z/pKUwekfnOnKYQW/jNxg0h+TRXx3wMvE3UGYosBe3OUpu0BQ59xtjMqOro2EEYf3Glbl/jgismIU4GmRBJaJOnctOwKdOI32ze55/A138FSGwkhE8P87dNAy4ih28Cgm91EveBXQuAAaW81qpqkftixBBMszecirhSgX7hN3GLjSo+R9UXSJc+1szlZO2O3kSOWgLn+CeRSpUkOjJ7zbD/Nc91P8GHZXXciXOZpBoqZjCVX7pcFBWeXIZ3hYQbkUlhA4z5tXf/C/v7OthBcqunj6P2kJ/S/RkzbH6pgIahiZIKkrtKPvW8H0ZPveiU4g/niozGEVRZG9hELVCi/KV9v/jREAjQoKaVm6AaQXZYt+b5wZrDrcVXyam9SF/ywbJgmk/awoqbP4dZDUa3Ci5/k02AIeFhBeYup8MVIbihIDQgYQ8TTSz5wZPHonH25HelV874arOclNJKsvXgQwPj26jnw6d4urE9SebyQ=
+before_script:
+- npm install -g gulp
+script: gulp build
